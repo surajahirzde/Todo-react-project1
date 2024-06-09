@@ -1,0 +1,205 @@
+.mainContent {
+  background-color: #f7ecdc;
+  color: var(--black);
+  width: 100%;
+  height: calc(100vh - 20px);
+  border-radius: 0 0 0 15px;
+  overflow: hidden;
+}
+.mainContent .emptyContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.mainContent .emptyContainer .breakWrapper {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.mainContent .emptyContainer .breakWrapper img {
+  width: 626px;
+  height: 313px;
+}
+.mainContent .emptyContainer .breakWrapper h2 {
+  font-size: 50px;
+}
+.mainContent .emptyContainer .breakWrapper p {
+  max-width: 646px;
+  font-size: 22px;
+}
+.mainContent .emptyContainer .footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/*  movie lover  */
+
+.mainContent .todoWrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 98px 1fr 255px;
+}
+.mainContent .todoWrapper .todoHeader {
+  width: 100%;
+  height: 98px;
+  display: grid;
+  grid-template-columns: 68px 1fr;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  background: #e8e8e8;
+}
+.mainContent .todoWrapper .todoHeader .toDoAvatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+}
+.mainContent .todoWrapper .todoHeader .gName {
+  font-size: 24px;
+}
+
+.mainContent .todoWrapper .todoContent {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  overflow-y: scroll;
+}
+.mainContent .todoWrapper .todoContent::-webkit-scrollbar {
+  width: 0;
+}
+.mainContent .todoWrapper .toDo {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  font-size: 18.5px;
+  margin-block: 2rem;
+  font-weight: 500;
+}
+
+.mainContent .todoWrapper .todoContent::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContent .todoWrapper .toDo .time {
+  width: 100%;
+  padding-left: 40px;
+}
+.mainContent .todoWrapper .toDo .content {
+  font-weight: 400;
+}
+.mainContent .todoWrapper .todoAddBox {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #e8e8e8;
+  padding: 2rem;
+}
+.mainContent .todoWrapper .todoAddBox textarea {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  font-size: 28px;
+  font-family: inherit;
+  border: none;
+  box-shadow: 0 0 0 1px #cccccc;
+  outline: none;
+  resize: none;
+  border-radius: 9px;
+}
+.mainContent .todoWrapper .todoAddBox button {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.mainContent .todoWrapper .todoAddBox button img {
+  width: 34px;
+  height: 28px;
+}
+.mainContent .icons {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mainContent {
+    display: none;
+  }
+  .mainContent.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+    display: block;
+  }
+  .mainContent .todoWrapper .todoHeader {
+    grid-template-columns: 10px 48px 1fr;
+    gap: 1rem;
+    height: 66px;
+  }
+  .mainContent .todoWrapper .todoHeader .toDoAvatar {
+    font-size: 16px;
+  }
+  .mainContent .todoWrapper .todoHeader .gName {
+    font-size: 16px;
+  }
+  .mainContent .todoWrapper {
+    height: 100vh;
+    width: 100vw;
+    grid-template-rows: 66px 1fr 130px;
+  }
+  .mainContent .todoWrapper .todoHeader .toDoAvatar {
+    width: 48px;
+    height: 48px;
+  }
+  .mainContent .todoWrapper .toDo {
+    grid-template-columns: 100px 1fr;
+    gap: 1rem;
+  }
+  .mainContent .todoWrapper .toDo .time {
+    padding-left: 0;
+    font-size: 13px;
+  }
+  .mainContent .todoWrapper .todoContent {
+    padding: 1rem;
+  }
+  .mainContent .todoWrapper .toDo .content {
+    font-size: 13px;
+  }
+  .mainContent .todoWrapper .todoAddBox {
+    padding: 1rem;
+  }
+  .mainContent .todoWrapper .todoAddBox textarea {
+    font-size: 17px;
+  }
+  .mainContent .icons {
+    display: block;
+  }
+  .mainContent .todoWrapper .todoAddBox button {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+  .mainContent .todoWrapper .todoAddBox button img {
+    width: 21px;
+    height: 17px;
+  }
+}
