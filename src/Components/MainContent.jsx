@@ -90,8 +90,10 @@ const MainContent = ({ todo, selectedIndex, changeIndex, setTodo }) => {
             className="toDoAvatar"
             style={{ backgroundColor: selectedTodo.color }}
           >
-            {selectedTodo?.gName?.split(" ")[0]?.slice(0, 1) +
-              selectedTodo?.gName?.split(" ")[1]?.slice(0, 1)}
+            {selectedTodo?.gName?.split(" ").length < 2
+              ? selectedTodo?.gName?.split(" ")[0]?.slice(0, 1)
+              : selectedTodo?.gName?.split(" ")[0]?.slice(0, 1) +
+                selectedTodo?.gName?.split(" ")[1]?.slice(0, 1)}
           </div>
           <div className="gName">{selectedTodo.gName}</div>
         </div>
