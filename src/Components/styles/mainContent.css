@@ -174,6 +174,7 @@
   .mainContent .todoWrapper .toDo {
     grid-template-columns: 100px 1fr;
     gap: 1rem;
+    margin-block: 1rem;
   }
   .mainContent .todoWrapper .toDo .time {
     padding-left: 0;
