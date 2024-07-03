@@ -95,6 +95,7 @@
   }
   .sideBar .createBtn {
     margin: auto;
+    width: calc(100% - 1rem);
     font-size: 20px;
   }
   .sideBar .toDoGroup .toDo .toDoAvatar {

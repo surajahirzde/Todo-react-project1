@@ -96,7 +96,7 @@
     grid-template-columns: 1fr;
   }
   .popUp{
-    padding: 1rem;
+    padding: 2rem;
   }
   .popUp .content h3 {
     font-size: 18px;
