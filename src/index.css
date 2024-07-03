@@ -95,6 +95,9 @@
   .Todo {
     grid-template-columns: 1fr;
   }
+  .popUp{
+    padding: 1rem;
+  }
   .popUp .content h3 {
     font-size: 18px;
   }
@@ -107,9 +110,6 @@
   }
   .popUp .content .input-group {
     grid-template-columns: 100px 1fr;
-  }
-  .popUp .content {
-    max-width: 284px;
   }
   .popUp .content .input-group .colorGroup button {
     width: 17px;

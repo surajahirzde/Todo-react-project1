@@ -90,8 +90,8 @@
   margin-bottom: 4rem;
   font-weight: 500;
 }
-.mainContent .todoWrapper .toDo:last-child{
-  margin-bottom:0;
+.mainContent .todoWrapper .toDo:last-child {
+  margin-bottom: 0;
 }
 .mainContent .todoWrapper .todoContent::-webkit-scrollbar {
   display: none;
@@ -165,7 +165,7 @@
     font-size: 16px;
   }
   .mainContent .todoWrapper {
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     grid-template-rows: 66px 1fr 130px;
   }
@@ -190,6 +190,7 @@
   }
   .mainContent .todoWrapper .todoAddBox {
     padding: 1rem;
+    height: 100%;
   }
   .mainContent .todoWrapper .todoAddBox textarea {
     font-size: 17px;

@@ -9,7 +9,7 @@
   margin: 1rem;
 }
 .sideBar .createBtn {
-  width: calc(100% - 1rem);
+  width: calc(100% - 5rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,6 +91,7 @@
     height: 90px;
     padding-left: 24px;
     padding-top: 30px;
+    margin: 0;
   }
   .sideBar .createBtn {
     margin: auto;
